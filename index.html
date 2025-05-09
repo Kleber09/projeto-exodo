@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projeto Êxodo: Cursos e e-books de teologia acessíveis e sólidos." />
+  <meta name="keywords" content="teologia, cursos, e-books, bíblia, ensino" />
+  <meta name="author" content="Projeto Êxodo" />
+  <title>Projeto Êxodo - Transformando Vidas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #0ff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    /* Navbar */
+    nav {
+      background: #1a1a1a;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      list-style: none;
+    }
+    nav a {
+      color: #0ff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .hamburger {
+      display: none;
+      font-size: 1.5rem;
+      color: #0ff;
+      cursor: pointer;
+    }
+
+    /* Section */
+    section {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 15px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0, 255, 255, 0.2);
+    }
+    .card h2 {
+      color: #0ff;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #ccc;
+      margin-bottom: 1rem;
+    }
+    .card button {
+      background: linear-gradient(45deg, #0ff, #00b7b7);
+      color: #000;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .card button:hover {
+      background: linear-gradient(45deg, #00b7b7, #0ff);
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    footer p {
+      color: #ccc;
+    }
+    footer a {
+      color: #0ff;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    footer a:hover {
+      color: #fff;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: #1a1a1a;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+      }
+      nav ul.active {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .card {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Projeto Êxodo</h1>
+    <p>Transformando vidas com ensino sólido e acessível</p>
+  </header>
+  <nav>
+    <div class="hamburger"><i class="fas fa-bars"></i></div>
+    <ul>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#ebooks">E-books Gratuitos</a></li>
+      <li><a href="#premium">Premium</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+  <section>
+    <div class="card">
+      <h2>Curso de Teologia Sistemática</h2>
+      <p>Aprenda teologia de forma profunda, prática e bíblica.</p>
+      <button>Ver Curso</button>
+    </div>
+    <div class="card">
+      <h2>E-book: Panorama Bíblico</h2>
+      <p>Entenda a Bíblia do Gênesis ao Apocalipse.</p>
+      <button>Baixar Grátis</button>
+    </div>
+    <div class="card">
+      <h2>E-book Premium: Apocalipse Revelado</h2>
+      <p>Estudo avançado do livro de Apocalipse com interpretações históricas.</p>
+      <button>Comprar</button>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Projeto Êxodo. Todos os direitos reservados.</p>
+    <p>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+    </p>
+  </footer>
+
+  <script>
+    // Menu hamburger
+    const hamburger = document.querySelector('.hamburger');
+    const navUl = document.querySelector('nav ul');
+    hamburger.addEventListener('click', () => {
+      navUl.classList.toggle('active');
+    });
+
+    // Fechar menu ao clicar em um link
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        navUl.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
